@@ -4,27 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio v.1</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- header-conteiner -->
     <header>
       <nav>
-        <a href="./index.html"> <span>Web </span>Studio</a>
-        <ul>
-          <li><a href="./images/">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
+        <a class="header-logo" href="./index.html">
+          Web <span class="header-logo">Studio</span></a
+        >
+        <ul class="site-nav list-rule">
+          <li><a href="./index.html" class="link current">Студия</a></li>
+          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li><a href="">Контакты </a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="site-nav list-rule">
         <li>
-          <a href="mailto:info@devstudio.com"
+          <a href="mailto:info@devstudio.com" class="link"
             ><!--img src="./images/mail_logo.svg" alt="почта" />-->
             info@devstudio.com</a
           >
         </li>
         <li>
-          <a href="tel:+380961111111"
+          <a href="tel:+380961111111" class="link"
             ><!--<img src="./images/tel_logo.svg" alt="телефон" />-->+38 096 111
             11 11</a
           >
@@ -32,21 +36,21 @@
       </ul>
     </header>
     <main>
-      <section>
-        <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <a href="">Заказать услугу</a>
+      <section class="hero">
+        <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <a href="" class="button primary">Заказать услугу</a>
       </section>
-      <!-- Studio-kills-conteiner-->
-      <section>
-        <h2>Studio kills</h2>
-        <ul>
+      <!-- Studio-skills-conteiner-->
+      <section class="section">
+        <h2 class="title">Studio skills</h2>
+        <ul class="studio-skills-list list-rule">
           <li>
-            <h3>ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-            <p>
+            <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+            <p class="text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
-            <a href="" aria-label="иконка антенны"></a>
+            <a href="" class="link" aria-label="иконка антенны"></a>
             <!-- <img
               src="./images/studio_skills/rectangle_details.svg"
               alt="прямоугольник фона"
@@ -60,8 +64,8 @@
             />-->
           </li>
           <li>
-            <h3>ПУНКТУАЛЬНОСТЬ</h3>
-            <p>
+            <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
+            <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
@@ -76,8 +80,8 @@
             />-->
           </li>
           <li>
-            <h3>ПЛАНИРОВАНИЕ</h3>
-            <p>
+            <h3 class="title">ПЛАНИРОВАНИЕ</h3>
+            <p class="text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
@@ -92,8 +96,8 @@
             />-->
           </li>
           <li>
-            <h3>СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-            <p>
+            <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+            <p class="text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -110,11 +114,11 @@
         </ul>
       </section>
       <!-- what-we-do-conteiner -->
-      <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Чем мы занимаемся</h2>
+        <ul class="what-we-do-list list-rule">
           <li>
-            <h3>ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+            <h3 class="title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             <img
               src="./images/what_we_do/desktop_logo.jpg"
               alt="руки на клавиатуре ноутбука"
@@ -124,7 +128,7 @@
             <!-- <img src="./images/what_we_do/desktop_bg.svg" alt="фон" /> -->
           </li>
           <li>
-            <h3>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+            <h3 class="title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             <img
               src="./images/what_we_do/apps_logo.jpg"
               alt="фото смартфона"
@@ -134,7 +138,7 @@
             <!-- <img src="./images/what_we_do/apps_bg.svg" alt="фон" /> -->
           </li>
           <li>
-            <h3>ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+            <h3 class="title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             <img
               src="./images/what_we_do/design_logo.jpg"
               alt="экран монитора"
@@ -146,21 +150,24 @@
         </ul>
       </section>
       <!-- our-team-conteiner -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Наша команда</h2>
+        <ul class="our-team-list list-rule">
           <li>
-            <h3>John Smith</h3>
-            <p>Product Designer</p>
+            <h3 class="title">John Smith</h3>
+            <p class="text">Product Designer</p>
             <img
               src="./images/team/img_john.jpg"
               width="278"
               height="260"
               alt="фото Джона"
             />
-            <ul>
+            <ul class="member-list list-rule">
               <li>
-                <a href="instagram.com" aria-label="иконка Инстаграм"
+                <a
+                  href="instagram.com"
+                  class="button primary"
+                  aria-label="иконка Инстаграм"
                   >Instagram</a
                 >
               </li>
@@ -178,15 +185,15 @@
             </ul>
           </li>
           <li>
-            <h3>Marta Stewart</h3>
-            <p>Frontend Developer</p>
+            <h3 class="title">Marta Stewart</h3>
+            <p class="text">Frontend Developer</p>
             <img
               src="./images/team/img_maria.jpg"
               width="278"
               height="260"
               alt="фото Марии"
             />
-            <ul>
+            <ul class="member-list list-rule">
               <li>
                 <a href="instagram.com" aria-label="иконка Инстаграм"
                   >Instagram</a
@@ -207,15 +214,15 @@
           </li>
 
           <li>
-            <h3>Robert Jakis</h3>
-            <p>Marketing</p>
+            <h3 class="title">Robert Jakis</h3>
+            <p class="text">Marketing</p>
             <img
               src="./images/team/img_robert.jpg"
               width="278"
               height="260"
               alt="фото Роберта"
             />
-            <ul>
+            <ul class="member-list list-rule">
               <li>
                 <a href="instagram.com" aria-label="иконка Инстаграм"
                   >Instagram</a
@@ -236,15 +243,15 @@
           </li>
 
           <li>
-            <h3>Martin Doe</h3>
-            <p>UI Designer</p>
+            <h3 class="title">Martin Doe</h3>
+            <p class="text">UI Designer</p>
             <img
               src="./images/team/img_martin.jpg"
               width="278"
               height="260"
               alt="фото Мартина"
             />
-            <ul>
+            <ul class="member-list list-rule">
               <li>
                 <a href="instagram.com" aria-label="иконка Инстаграм"
                   >Instagram</a
@@ -266,9 +273,9 @@
         </ul>
       </section>
       <!-- regular-clients-conteiner -->
-      <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Постоянные клиенты</h2>
+        <ul class="regular-clients-list list-rule">
           <li>
             <a href="" aria-label="Клиент 1">
               <!-- <img src="./images/clients/Client1.svg" alt="лого клиента №1"> -->
@@ -285,7 +292,7 @@
             </a>
           </li>
           <li>
-            <a href="" aria-label="Клиент 4">
+            <a href="" class="link" aria-label="Клиент 4">
               <!-- <img src="./images/clients/Client4.svg" alt="лого клиента №4"> -->
             </a>
           </li>
@@ -304,42 +311,39 @@
     </main>
     <!-- footer-conteiner -->
     <footer>
-      <div>
-        <a href="index.html"><span>Web </span>Studio</a>
-        <h2>Контакты</h2>
+      <div class="contacts">
+        <a class="footer-logo" href="./index.html">
+          Web <span class="footer-logo">Studio</span></a
+        >
+        <h2 class="title">Контакты</h2>
 
         <address>
-          <a href="#">г. Киев, пр-т Леси Украинки, 26</a> <br />
-          <a href="mailto:info@example.com">info@example.com</a><br />
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <a href="#" class="address">г. Киев, пр-т Леси Украинки, 26</a> <br />
+          <a href="mailto:info@example.com" class="link">info@example.com</a
+          ><br />
+          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
         </address>
       </div>
-      <div>
+      <div class="subscribe">
         <b> Присоединяйтесь</b>
         <ul>
           <li><a href="" aria-label="ссылка на Instagram"></a></li>
-          <li><a href="" aria-label="ссылка на Twitter"></a></li>
+          <li>
+            <a
+              href=""
+              class="button primary"
+              aria-label="ссылка на Twitter"
+            ></a>
+          </li>
           <li><a href="" aria-label="ссылка на Facebook"></a></li>
           <li><a href="" aria-label="ссылка на Linkedin"></a></li>
         </ul>
       </div>
-      <!-- <div>
+      <div class="subscribe">
         <b>ПОДПИСАТЬСЯ НА РАССЫЛКУ</b>
-        <form id="asd_subscribe_form" method="post" action="/">
-          <div><img src="./images/footer/e-mail_input.svg" alt="" /></div>
-          <input type="text" placeholder="E-mail" value="" name="asd_email" />
-          <div>
-            <img src="./images/footer/button.svg" alt="" />
-            <input
-              type="submit"
-              value="Подписаться"
-              id="asd_subscribe_submit"
-              name="asd_submit"
-            />
-          </div>
-        </form>
-      </div>-->
-      <p>2020 | Developed by GoIT Students</p>
+        <a href="" class="button primary">ПОДПИСАТЬСЯ</a>
+      </div>
+      <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

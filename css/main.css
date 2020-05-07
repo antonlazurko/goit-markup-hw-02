@@ -1,0 +1,61 @@
+/* палитра
+основной черный #212121
+вторичный черный #757575
+основной белый #FFFFFF
+вторичный белый rgba(255, 255, 255, 0.6);
+акцент #2196f3
+*/
+/* css для index.html */
+* акцент*/ .studio-skills-list .link:hover,
+.studio-skills-list .link:focus {
+  color: var(--accent-color);
+}
+
+.hero .title,
+.hero .link {
+  color: var(--white-text-color);
+  /* background-color: blue; */
+  /* голубой фон, чтобы было видно текст */
+}
+.studio-skills {
+}
+.section .title {
+  color: var(--primaty-text-color);
+}
+.studio-skills-list .text {
+  color: var(--secondary-text-color);
+}
+.studio-skills-list .link:hover {
+  color: var();
+}
+
+.what-we-do-list .title {
+  color: var(--white-text-color);
+  /* фон для того чтобы было видно текст */
+  background-color: blue;
+}
+.our-team-list .title {
+  color: var(--primaty-text-color);
+}
+.our-team .text {
+  color: var(--secondary-text-color);
+}
+.member-list .link:hover,
+.member-list .link:focus {
+  color: var(--accent-color);
+}
+.regular-clients {
+}
+.regular-clients .title {
+  color: var(--primaty-text-color);
+}
+.regular-clients .link:hover {
+  color: var(--accent-color);
+}
+
+/* button */
+.button.primary {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+/* css дляportfolio.html */
