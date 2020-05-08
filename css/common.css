@@ -58,11 +58,11 @@ a {
 }
 .footer-logo {
   color: var(--accent-color);
-  font-family: Raleway;
+  font-family: Raleway, serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.18;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.03em;
 }
 .footer-logo span {
   color: var(--white-text-color);
