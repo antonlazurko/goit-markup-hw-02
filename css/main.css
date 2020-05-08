@@ -1,12 +1,10 @@
-/* палитра
-основной черный #212121
+/* палитра основной черный #212121
 вторичный черный #757575
 основной белый #FFFFFF
 вторичный белый rgba(255, 255, 255, 0.6);
 акцент #2196f3
 */
 /* css для index.html */
-* акцент*/
 /* hero css */
 .hero .title {
   font-weight: 900;
@@ -15,13 +13,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: #ffffff;
-}
-.hero .title,
-.hero .link {
   color: var(--white-text-color);
+  /* фон, чтобы было видно элементы */
+  background-color: grey;
 }
+
 /* css для всех секций */
 .section .title {
   font-weight: 700;
@@ -54,7 +50,7 @@
 .what-we-do-list .title {
   color: var(--white-text-color);
   /* фон для того чтобы было видно текст */
-  background-color: blue;
+  background-color: grey;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
