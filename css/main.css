@@ -17,8 +17,6 @@
   /* background-color: blue; */
   /* голубой фон, чтобы было видно текст */
 }
-.studio-skills {
-}
 .section .title {
   color: var(--primaty-text-color);
 }
@@ -44,8 +42,7 @@
 .member-list .link:focus {
   color: var(--accent-color);
 }
-.regular-clients {
-}
+
 .regular-clients .title {
   color: var(--primaty-text-color);
 }
@@ -59,3 +56,17 @@
   background-color: var(--accent-color);
 }
 /* css для portfolio.html */
+.filtres .button {
+  color: var(--primaty-text-color);
+  background-color: #f5f4fa;
+}
+.filtres .button:hover,
+.filtres .button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+.work-list .title{
+  color: var(--primaty-text-color);
+}
+.work-list .text {
+  color: var(--secondary-text-color);
