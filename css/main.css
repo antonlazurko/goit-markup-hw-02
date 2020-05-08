@@ -17,6 +17,7 @@
   /* background-color: blue; */
   /* голубой фон, чтобы было видно текст */
 }
+
 .section .title {
   color: var(--primaty-text-color);
 }
@@ -65,8 +66,9 @@
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-.work-list .title{
+.work-list .title {
   color: var(--primaty-text-color);
 }
 .work-list .text {
   color: var(--secondary-text-color);
+}
